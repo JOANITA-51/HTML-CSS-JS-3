@@ -1,0 +1,11 @@
+input{
+    border: 1px solid rgb(209, 114, 45);
+}
+input:focus{
+    background-color: rgb(144, 128, 247);
+}
+#nick{
+    margin-left:2%;
+    display: none;
+    width: 50%;
+}

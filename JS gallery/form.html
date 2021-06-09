@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <script src="js/form.js"></script>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Information </legend>
+            <label for="name">Name:
+            <input type="text" id="name" 
+     name="name" value="Anita"> <br></label>
+
+            <label>Email:<input type="email" name="email" id="email_addr"
+         required></label><br/>
+             <label>Repeat email address:
+                 <input type="email" id="email_repeat" name="email2" 
+                 required onchange="return check()">
+             </label> <br/>
+
+             <label for="birth">Birth:<input type="date" id="birth" name="birth"
+      value="birth"> <br/>
+             </label>
+             
+             <label>Password:<input type="password" id="password" name="password"
+                pattern="[0-9]{5}">  </label> <br/>
+           
+
+             <input type="submit" value="Click Here" onclick="return check();">
+        </fieldset>
+     </form>
+
+     <form>
+         <fieldset>
+             <legend>Form verification</legend>
+             <label for="fName">First Name:</label>
+             <input type="text"name="fName"id="fName" required><br/>
+
+             <label for="lName">Last Name:</label>
+             <input type="text"name="lName"id="lName" required><br>
+
+             <label for="yesNick">Nickname?:</label>
+             <input id="yesNick" name="yesNick" type="checkbox" value="yes" onchange="nicknameFunction()"><br/>
+
+             <div id="nick">
+                 <label for="nickname">Nickname:</label>
+                 <input type="text" name="nickname" id="nickname"><br>
+             </div>
+
+             <input type="submit" value="verify"/>
+         </fieldset>
+     </form>
+
+</body>
+</html>
